@@ -1,0 +1,19 @@
+:root {
+  --color-white: #fff;
+  --color-black: #1B1A1B;
+  --color-grey: #EADEED;
+  --color-violetLight: #CD06FF;
+  --color-violetMedium: #6C0287;
+  --color-violetDark: #440F51;
+  --color-violetHover: #640AA3;
+}
+
+/*
+var(--color-white)
+var(--color-black)
+var(--color-grey)
+var(--color-violetLight)
+var(--color-violetMedium)
+var(--color-violetDark)
+var(--color-violetHover)
+ */

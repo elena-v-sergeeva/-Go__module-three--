@@ -1,0 +1,150 @@
+.banner__container {
+  position: relative;
+  min-height: 823px;
+}
+
+.banner__container:after {
+  content: "";
+  display: block;
+  background-image: url(../img/player.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  width: 675px;
+  height: 762px;
+} 
+
+.banner__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: -0.1em;  
+}
+
+.banner__text {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.78;
+  margin-bottom: 30px;
+  padding-left: 100px;
+}
+
+.banner__elements {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  max-width: 193px;
+  margin-bottom: 175px;
+}
+
+.banner__element {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+}
+
+.banner__span {
+  display: block;
+  font-weight: 900;
+  line-height: 1.41;
+  color: var(--color-violetLight);
+  text-align: center;
+}
+
+.banner__span_type_number {
+  font-size: 100px;
+}
+
+.banner__span_type_text {
+  font-size: 75px;
+  font-variant: all-small-caps;
+}
+
+.banner__link-button {
+  position: relative;
+  background-color: var(--color-violetMedium);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  padding: 25px 69px;
+  z-index: 1;
+  /* border: none; */
+}
+
+.banner__link-button:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-violetMedium);
+  filter: blur(10px);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.banner__link-button:hover {
+  background-color: #840AA3;
+  transition: background-color 0.3s ease;
+}
+
+.banner__link-button:active {
+  background-color: var(--color-violetHover);
+  transition: background-color 0.3s ease;
+}
+
+.banner__link-button:focus {
+  background-color: #840AA3;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.banner__link-next {
+  font-size: 0;
+  outline: 1px solid transparent;
+  transition-property: color, outline-color;
+  transition-duration: 0.3s, 0.2s;
+  transition-timing-function: ease-in-out;
+  position: absolute;
+  display: block;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 90px;
+  z-index: 5;
+}
+
+.banner__link-next:hover .circle {
+  fill: var(--color-white);
+  transition: fill 0.3s ease-in-out;
+}
+
+.banner__link-next:hover .rect {
+  fill: var(--color-violetMedium);
+  transition: fill 0.3s ease-in-out;
+}
+
+.banner__link-next:focus {
+  outline-color: var(--color-violetLight);
+  transition: outline-color 0.3s ease-in-out;
+}
+
+.banner__link-next:active {
+  outline: none;
+}
+
+.banner__link-next:active .circle {
+  fill: var(--color-violetLight);
+  stroke: var(--color-violetLight);
+  transition: fill 0.3s ease-in-out;
+}
+
+.banner__link-next:active .rect {
+  fill: var(--color-white);
+  transition: fill 0.3s ease-in-out;
+}
+
